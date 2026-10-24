@@ -68,6 +68,7 @@ SUPPORTED_VERSIONS = {
     "atom": "Atom (unknown version)",
     "cdf": "CDF",
     "json1": "JSON feed 1",
+    "sitemap": "XML Sitemap",
 }
 
 

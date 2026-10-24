@@ -205,12 +205,18 @@ class Namespace:
             context["height"] = value
 
     def _start_url(self, attrs_d):
+        if getattr(self, "insitemap", 0):
+            # In a sitemap document, <url> is the entry container,
+            # not an author/image URL.
+            return self._start_sitemap_entry(attrs_d)
         self.push("href", 1)
 
     _start_homepage = _start_url
     _start_uri = _start_url
 
     def _end_url(self):
+        if getattr(self, "insitemap", 0) and self.inentry:
+            return self._end_sitemap_entry()
         value = self.pop("href")
         if self.inauthor:
             self._save_author("href", value)

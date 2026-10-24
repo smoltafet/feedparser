@@ -1,0 +1,19 @@
+<!--
+Description: Google News sitemap entries expose publication, title, and date
+Expect:      not bozo and version == 'sitemap' and len(entries) == 1 and entries[0]['link'] == 'http://www.example.org/business/article55.html' and entries[0]['title'] == 'Companies A, B in Merger Talks' and entries[0]['news']['publication']['name'] == 'The Example Times' and entries[0]['news']['publication']['language'] == 'en'
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>http://www.example.org/business/article55.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>The Example Times</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2008-12-23T18:00:15+00:00</news:publication_date>
+      <news:title>Companies A, B in Merger Talks</news:title>
+      <news:keywords>business, merger</news:keywords>
+    </news:news>
+  </url>
+</urlset>
