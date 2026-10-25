@@ -5,64 +5,64 @@ import feedparser
 PLAIN_SITEMAP = """\
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://www.example.org/</loc>
-    <lastmod>2005-01-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>http://www.example.org/catalog?item=12&amp;desc=vacation_hawaii</loc>
-    <changefreq>weekly</changefreq>
-  </url>
+    <url>
+        <loc>http://www.example.org/</loc>
+        <lastmod>2005-01-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.example.org/catalog?item=12&amp;desc=vacation_hawaii</loc>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>
 """
 
 NEWS_SITEMAP = """\
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>http://www.example.org/business/article55.html</loc>
-    <lastmod>2008-12-23T18:00:15+00:00</lastmod>
-    <news:news>
-      <news:publication>
-        <news:name>The Example Times</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2008-12-23T18:00:15+00:00</news:publication_date>
-      <news:title>Companies A, B in Merger Talks</news:title>
-      <news:keywords>business, merger, acquisition</news:keywords>
-    </news:news>
-  </url>
-  <url>
-    <loc>http://www.example.org/business/article66.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>The Example Times</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:genres>PressRelease, Blog</news:genres>
-      <news:publication_date>2008-12-23</news:publication_date>
-      <news:title>Article 66 Title</news:title>
-      <news:keywords>stocks</news:keywords>
-      <news:stock_tickers>NYSE:IBM, NASDAQ:MSFT</news:stock_tickers>
-    </news:news>
-  </url>
+                xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    <url>
+        <loc>http://www.example.org/business/article55.html</loc>
+        <lastmod>2008-12-23T18:00:15+00:00</lastmod>
+        <news:news>
+            <news:publication>
+                <news:name>The Example Times</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2008-12-23T18:00:15+00:00</news:publication_date>
+            <news:title>Companies A, B in Merger Talks</news:title>
+            <news:keywords>business, merger, acquisition</news:keywords>
+        </news:news>
+    </url>
+    <url>
+        <loc>http://www.example.org/business/article66.html</loc>
+        <news:news>
+            <news:publication>
+                <news:name>The Example Times</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:genres>PressRelease, Blog</news:genres>
+            <news:publication_date>2008-12-23</news:publication_date>
+            <news:title>Article 66 Title</news:title>
+            <news:keywords>stocks</news:keywords>
+            <news:stock_tickers>NYSE:IBM, NASDAQ:MSFT</news:stock_tickers>
+        </news:news>
+    </url>
 </urlset>
 """
 
 SITEMAP_INDEX = """\
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>http://www.example.org/sitemap1.xml.gz</loc>
-    <lastmod>2004-10-01T18:23:17+00:00</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>http://www.example.org/sitemap2.xml.gz</loc>
-    <lastmod>2005-01-01</lastmod>
-  </sitemap>
+    <sitemap>
+        <loc>http://www.example.org/sitemap1.xml.gz</loc>
+        <lastmod>2004-10-01T18:23:17+00:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>http://www.example.org/sitemap2.xml.gz</loc>
+        <lastmod>2005-01-01</lastmod>
+    </sitemap>
 </sitemapindex>
 """
 
